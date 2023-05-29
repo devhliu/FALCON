@@ -20,7 +20,7 @@ RUN apt-get update \
 RUN pip install scikit-build cmake
 
 WORKDIR /
-RUN git clone https://github.com/QIMP-Team/FALCON.git
+RUN git clone https://github.com/devhliu/FALCON.git
 WORKDIR /FALCON
 RUN git checkout kube
 RUN . ./falcon_installer.sh
