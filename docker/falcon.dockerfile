@@ -21,7 +21,7 @@ RUN pip install scikit-build cmake
 
 WORKDIR /
 RUN git clone https://github.com/QIMP-Team/FALCON.git
-RUN git checkout kube
 WORKDIR /FALCON
+RUN git checkout kube
 RUN . ./falcon_installer.sh
 RUN . /root/.bashrc
