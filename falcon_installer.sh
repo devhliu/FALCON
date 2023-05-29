@@ -18,17 +18,17 @@ echo '**************************************************************************
 
 echo '[1] Downloading required files IBM cloud storage...'
 # Check if the OS is Mac or Linux and change subsequent commands accordingly
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        wget "https://falcon.s3.eu-de.cloud-object-storage.appdomain.cloud/FALCON-files.zip"  
-        sudo apt-get install cmake pkg-config
-        sudo apt install git
-        sudo apt update
-        sudo apt install python3-pip
-        sudo apt install cmake-curses-gui        
-else
-        echo 'Unsupported OS'
-        exit 1
-fi
+#if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+wget "https://falcon.s3.eu-de.cloud-object-storage.appdomain.cloud/FALCON-files.zip"  
+sudo apt-get install cmake pkg-config
+sudo apt install git
+sudo apt update
+sudo apt install python3-pip
+sudo apt install cmake-curses-gui        
+#else
+#        echo 'Unsupported OS'
+#        exit 1
+#fi
 
 
 echo '[2] Installing python packages for running FALCON...'
